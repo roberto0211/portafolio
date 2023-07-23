@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
 
     <title>Portafolio</title>
 
@@ -16,112 +16,141 @@
     <link href="estilos.css" rel="stylesheet">
 
     <link href="styles.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
 
 </head>
 
 <body>
     <div class="container">
         <div id="top-navigation" class="top-navigation">
-            <div>
-                <a href="#Home" class="main-logo is-dark">
-                    PORTAFOLIO
-                </a>
+            <div class="content">
+                <div>
+                    <a href="#Home" class="main-logo is-dark">
+                        PORTAFOLIO
+                    </a>
+                </div>
+                <div>
+                    <a id="btn-menu"class="main-logo is-dark">
+                        Menu
+                    </a>
+                </div>
+                <div id="menu" class="menu">
+                    
+                    <a href="#Aboutme" class="">
+                        <span class="hover"></span>
+                        <span class="label">About me</span>
+                    </a>
+                    <a href="#Projects" class="">
+                        <span class="hover"></span>
+                        <span class="label">Projects</span>
+                    </a>
+                    <a href="#Contact" class="">
+                        <span class="hover"></span>
+                        <span class="label">Contact</span>
+                    </a>
+                    <a class="download-vc" href="folder/cv.pdf" target="_blank">Download cv</a>
+
+                </div>
+                <div class="box download-vc">
+                    <a href="folder/cv.pdf" target="_blank">Download cv</a>
+                </div>
             </div>
-            <div class="menu">
-                <a href="#Aboutme" class="">
-                    <span class="hover"></span>
-                    <span class="label">About me</span>
-                </a>
-                <a href="#Projects" class="">
-                    <span class="hover"></span>
-                    <span class="label">Projects</span>
-                </a>
-                <a href="#Contact" class="">
-                    <span class="hover"></span>
-                    <span class="label">Contact</span>
-                </a>
-    
-            </div>
-            <div class="download-vc">
-                <a href="folder/cv.pdf" target="_blank">Download cv</a>
-            </div>
-    
-    
+
+
+
         </div>
-        <main>
+        <div>
+            <section id="Home" class="description-banner">
+                <div class="content">
+                    <h1 class="element  main-title">ROBERTO<br>RUEDA YAGUI</h1>
+                    <span class="label">I'm a systems engineer specialized in frontend and backend software development,
+                        enthusiastic to continue my professional career in the cloud computing world.</span>
 
-                <section id="Home" class="description-banner">
-    
-    
-                    <div class="content">
-    
-                        <h1 class="element  main-title">ROBERTO<br>RUEDA YAGUI</h1>
-    
-    
-                            <span class="label">I'm a systems engineer specialized in frontend and backend software development,
-                                 enthusiastic to continue my professional career in the cloud computing world.</span>
-              
+                </div>
+
+                <div class="images">
+                    <img src="images/avatar.png" alt="foto profesional">
+                </div>
+
+
+            </section>
+
+            <section id="Aboutme" class="aboutme">
+
+                <div class="content">
+                    <h2>ABAOUT ME</h2>
+                    <div class="description">
+                        <p>
+                        </p>
                     </div>
-    
-                    <div class="images">
-                        <img src="images/avatar.png" alt="foto profesional">
-                    </div>
-    
-    
-                </section>
-    
-                <section id="Abaoutme" class="aboutme">
-    
-                    <div class="content">
-                        <h2>ABAOUT ME</h2>
-                        <div class="description">
-                            <p>
-                            </p>
+
+                </div>
+
+            </section>
+
+            <section id="Projects" class="Projects">
+                <div class="content">
+                    <div class="element">
+                        <div>
+                            <h2 class="section-title">My Projects</h2>
                         </div>
+                        <div class="target-projects">
+                            <div class="target" data-index="02">
 
-                    </div>
-                   
-                </section>
-    
-                <section id="Projects" class="Projects">
-                    <div class="content">
-                        <div class="element">
-                            <div>
-                                <h2 class="section-title">My Projects</h2>
-                            </div>
-                            <div class="target-projects">
-                                <div class="target" data-index="02">
-                                   
-                                    <h3 class="section-title element delay-1"><a
-                                            href="https://roberto0211.github.io/deployjuego/"> <strong>01</strong> POKEMON GAME</a></h3>
-                                    <div class="description element delay-2">
-                                        <p>
-                                            To challenge my skills to myself, I created this mini game where you have to guess the pokemon.
-                                            I used the <a href="https://pokeapi.co/">POKEAPI</a> api and the following technologies:
-                                        </p>
-                                    </div>
-                                    <ol>
-                                        <li><span>01.-</span>Angular</li>
-                                        <li><span>02.-</span>Html</li>
-                                        <li><span>03.-</span>Css</li>
-                                        <li><span>04.-</span>TypeScript</li>
-                                        <li><span>05.-</span>Git</li>
-                                        <li><span>06.-</span>GitHub Pages</li>
-                                    </ol>
-                                    <div class="show-image-project">
-                                        <img src="images/projects/pokemon/image1.jpg" alt="project">
+                                <h3 class="section-title element delay-1"><a
+                                        href="https://roberto0211.github.io/deployjuego/"> <strong>01</strong> POKEMON
+                                        GAME</a></h3>
+                                <div class="description element delay-2">
+                                    <p>
+                                        To challenge my skills to myself, I created this mini game where you have to
+                                        guess the pokemon.
+                                        I used the <a href="https://pokeapi.co/">POKEAPI</a> api and the following
+                                        technologies:
+                                    </p>
+                                </div>
+                                <ol>
+                                    <li><span>01.-</span>Angular</li>
+                                    <li><span>02.-</span>Html</li>
+                                    <li><span>03.-</span>Css</li>
+                                    <li><span>04.-</span>TypeScript</li>
+                                    <li><span>05.-</span>Git</li>
+                                    <li><span>06.-</span>GitHub Pages</li>
+                                </ol>
+                                <div class="swiffy-slider" style="margin-top: 10px;">
+                                    <ul class="slider-container">
+                                        <li><img src="images/projects/pokemon/image1.PNG" alt="image1"
+                                                style="max-width: 100%;height: auto;"></li>
+                                        <li><img src="images/projects/pokemon/image2.PNG" alt="image2"
+                                                style="max-width: 100%;height: auto;"></li>
+                                        <li><img src="images/projects/pokemon/image3.PNG" alt="image3"
+                                                style="max-width: 100%;height: auto;"></li>
+                                        <li><img src="images/projects/pokemon/image4.PNG" alt="image4"
+                                                style="max-width: 100%;height: auto;"></li>
+                                    </ul>
+
+                                    <button type="button" class="slider-nav"></button>
+                                    <button type="button" class="slider-nav slider-nav-next"></button>
+
+                                    <div class="slider-indicators">
+                                        <button class="active"></button>
+                                        <button></button>
+                                        <button></button>
                                     </div>
                                 </div>
-                       
-                                
+
                             </div>
-                            
+
+
                         </div>
+
                     </div>
-                </section>
-    
-<!--     
+                </div>
+            </section>
+
+            <!--     
                 <section id="Contact"
                     class="contact">
                     efwefwef
@@ -129,29 +158,34 @@
                     wefwekfnwejfniwefbiwef
                 </section> -->
 
-    
-        </main>
+
+        </div>
         <footer class="footer">
-            <div class="inner">
+            <div class="content">
                 <div class="column">
                     <a href="" class="main-logo is-light">
-                        My portafolio <br> <br>
+                        <h3 class="column-title">PORTAFOLIO</h3><br>
                         Roberto Rueda Yagui
                     </a>
                 </div>
                 <div class="column">
-                    <div class="column-title">Navegación</div>
+
                     <ul>
+                        <li>
+                            <h3 class="column-title">NAVEGATION</h3>
+                        </li>
                         <li><a href="#Home">Home</a></li>
                         <li><a href="#Abaoutme">About me</a></li>
                         <li><a href="#Projects">Projects</a></li>
-                        <!-- <li><a href="#Contact">Contacto</a></li> -->
-    
+
+
                     </ul>
                 </div>
                 <div class="column">
-                    <div class="column-title">Contacto</div>
                     <ul>
+                        <li>
+                            <h3 class="column-title">CONTACT</h3>
+                        </li>
                         <li><a href="mailto:robertoruedayagui@gmail.com" target="_blank"><span class="icon email">
                                     <svg width="25" height="25" viewBox="0 0 14 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -160,37 +194,38 @@
                                             fill="white"></path>
                                     </svg>
                                 </span> robertoruedayagui@gmail.com</a></li>
-    
-    
-                        <li><a href="https://www.linkedin.com/in/roberto-carlos-rueda-yagui-51303919b" target="_blank"><span
-                                    class="icon linkedin"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+
+
+                        <li><a href="https://www.linkedin.com/in/roberto-carlos-rueda-yagui-51303919b"
+                                target="_blank"><span class="icon linkedin"><svg width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M21.2991 21.3043H17.597V15.5032C17.597 14.1199 17.5689 12.3397 15.6678 12.3397C13.7376 12.3397 13.4428 13.8449 13.4428 15.4011V21.3043H9.74069V9.37506H13.297V11.0011H13.3449C13.8418 10.0636 15.0501 9.07402 16.8553 9.07402C20.6064 9.07402 21.3001 11.5428 21.3001 14.7564V21.3043H21.2991ZM5.55941 7.74276C4.36774 7.74276 3.41044 6.77817 3.41044 5.5917C3.41044 4.40628 4.36878 3.44273 5.55941 3.44273C6.74692 3.44273 7.70943 4.40628 7.70943 5.5917C7.70943 6.77817 6.74588 7.74276 5.55941 7.74276ZM7.41568 21.3043H3.70315V9.37506H7.41568V21.3043ZM23.1512 0H1.8448C0.825006 0 0 0.806255 0 1.80105V23.1991C0 24.195 0.825006 25.0002 1.8448 25.0002H23.1481C24.1668 25.0002 25.0002 24.195 25.0002 23.1991V1.80105C25.0002 0.806255 24.1668 0 23.1481 0H23.1512Z"
                                             fill="white"></path>
                                     </svg>
                                 </span>LinkedIn</a></li>
-           
+
                     </ul>
-    
+
                 </div>
-    
+
             </div>
-        </footer>
-    
+        </footer> 
+
 
     </div>
-   
 
 
 
-   
+
+
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let scroll_pos = 0;
         let topNavigation = document.getElementById("top-navigation");
-
+        let menuBtn = document.getElementById("btn-menu");
+        let menuShow = document.getElementById("menu");
         window.addEventListener("scroll", function () {
             scroll_pos = window.scrollY;
 
@@ -200,6 +235,14 @@
                 topNavigation.style.backgroundColor = "Transparent"; // Blanco
             }
         });
+        menuBtn.addEventListener("click", function () {
+            
+            menuShow.classList.toggle('hide')
+        });
+
+
+
     });
 </script>
+
 </html>
