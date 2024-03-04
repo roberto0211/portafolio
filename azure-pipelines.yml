@@ -3,15 +3,16 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
 
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
+- script: |
+    # Esto es un script para copiar los archivos HTML y CSS de tu repositorio a la carpeta de publicación
+    cp -r portafolio/* $(Build.ArtifactStagingDirectory)
+  displayName: 'Copiar archivos HTML y CSS'
+
 - task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'web-app'
+    publishLocation: 'Container'
+  displayName: 'Publicar archivos de la aplicación web'
